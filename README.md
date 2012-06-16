@@ -10,26 +10,33 @@ I've developed a Backbone.js view that helps incorporate Tumult Hype animations 
 To use this, you'll want to include the HypeView object.  It'll put itself into window.HypeView.
 
 You'll have to create some javascript callbacks in your Hype document:
+
 * create a dummy first scene, with the following onSceneLoad:
-   try {
-     HypeView.documentLoaded(hypeDocument);
-   } catch(e) {
-     console.log("error in documentLoaded", e);
-   }
+
+    try {
+      HypeView.documentLoaded(hypeDocument);
+    } catch(e) {
+      console.log("error in documentLoaded", e);
+    }
+
 * in each additional scene, you should have the following onSceneLoad
-   try {
-     HypeView.animationSceneLoad(hypeDocument);
-   } catch(e) {
-     console.log("error in animationSceneLoad", e);
-   }
+
+    try {
+      HypeView.animationSceneLoad(hypeDocument);
+    } catch(e) {
+      console.log("error in animationSceneLoad", e);
+    }
+
 * finally, each scene should have an onAnimationComplete (or a "continue" button that does the same thing)
-   try {
-     HypeView.animationComplete(hypeDocument);
-   } catch(e) {
-     console.log("error in animationComplete", e);
-   }
+
+    try {
+      HypeView.animationComplete(hypeDocument);
+    } catch(e) {
+      console.log("error in animationComplete", e);
+    }
 
 To load a hype document:
+
     d = $("<div></div>").appendTo($("body"))
     myView = new HypeView({
       el: d
@@ -40,4 +47,5 @@ To load a hype document:
     myView.load(myOnLoadCallback);
 
 To play a scene:
-    myView(sceneName, templateDictionary, mySceneIsDoneCallback)
+
+     myView(sceneName, templateDictionary, mySceneIsDoneCallback)

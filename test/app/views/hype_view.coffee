@@ -1,0 +1,1 @@
+../../../hype_view.coffee

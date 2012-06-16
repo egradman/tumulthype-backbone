@@ -1,17 +1,17 @@
-I love Tumult Hype, and I've been incorporating its output into a larger application.
+I love Tumult Hype, and I've been incorporating its output into a larger application.  This is a Backbone view which manages many Hype documents for me, unceremoniously ripped from a larger piece of code.
 
-I've developed a Backbone.js view that helps incorporate Tumult Hype animations in the following ways:
+This backbone view helps incorporate Tumult Hype animations in the following ways:
 
-* It automatically generates the div/script tags and inserts them into the DOM
-* A callback is run when the HYPE object is ready, and the first scene is playing
-* Want to templatize your Tumult Hype documents?  Put underscore templates in the alt tags of your Hype elements and they'll automatically be evaluated by this view.
-* Programmatically run a callback when an animation is finished
+* It automatically generates the div/script tags and inserts them into the DOM for an arbitrary number of separate Hype documents.
+* The animations in a hype document cannot be played until the HYPE object is available, so this view helps you out by managing a callback to be run when the HYPE object is ready.
+* Want to templatize your Tumult Hype documents?  Put underscore templates in the alt tags of your Hype elements.  If you pass a data dictionary to the showSceneNamed() method of this view, it'll evaluate underscore templates in your alt tags.  The data dictionary is available to any Javascript in your Hype document, so you can use it to programmatically run timelines &c.
+* Want to know when your programmatically started Hype animation has completed?  Pass a callback to this view's showSceneNamed() function.
 
 To use this, you'll want to include the HypeView object.  It'll put itself into window.HypeView.
 
 You'll have to create some javascript callbacks in your Hype document:
 
-Create a dummy first scene, with the following onSceneLoad:
+Create a dummy first scene, with the following onSceneLoad.  This is how we know when the document is loaded (and the HYPE object is ready).
 
     try {
       HypeView.documentLoaded(hypeDocument);
@@ -19,7 +19,7 @@ Create a dummy first scene, with the following onSceneLoad:
       console.log("error in documentLoaded", e);
     }
 
-In each additional scene, you should have the following onSceneLoad
+In each subsequent scene, you should have the following onSceneLoad.  This function is what performs the templating and other support functions.  This functionality can, of course, be part of a larger function.
 
     try {
       HypeView.animationSceneLoad(hypeDocument);
@@ -48,4 +48,4 @@ To load a hype document:
 
 To play a scene:
 
-    myView(sceneName, templateDictionary, mySceneIsDoneCallback)
+    myView.showSceneNamed(sceneName, templateDictionary, mySceneIsDoneCallback)

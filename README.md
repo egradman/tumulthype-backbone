@@ -11,7 +11,7 @@ To use this, you'll want to include the HypeView object.  It'll put itself into 
 
 You'll have to create some javascript callbacks in your Hype document:
 
-* create a dummy first scene, with the following onSceneLoad:
+Create a dummy first scene, with the following onSceneLoad:
 
     try {
       HypeView.documentLoaded(hypeDocument);
@@ -19,7 +19,7 @@ You'll have to create some javascript callbacks in your Hype document:
       console.log("error in documentLoaded", e);
     }
 
-* in each additional scene, you should have the following onSceneLoad
+In each additional scene, you should have the following onSceneLoad
 
     try {
       HypeView.animationSceneLoad(hypeDocument);
@@ -27,7 +27,7 @@ You'll have to create some javascript callbacks in your Hype document:
       console.log("error in animationSceneLoad", e);
     }
 
-* finally, each scene should have an onAnimationComplete (or a "continue" button that does the same thing)
+Finally, each scene should have an onAnimationComplete (or a "continue" button that does the same thing)
 
     try {
       HypeView.animationComplete(hypeDocument);
@@ -48,4 +48,4 @@ To load a hype document:
 
 To play a scene:
 
-     myView(sceneName, templateDictionary, mySceneIsDoneCallback)
+    myView(sceneName, templateDictionary, mySceneIsDoneCallback)

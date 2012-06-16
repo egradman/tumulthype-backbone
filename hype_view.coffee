@@ -43,8 +43,9 @@ window.HypeView = class HypeView extends Backbone.View
   _animationComplete:()=>
     @animationCompleteCallback()
 
+  # these are the static methods that can be called from your Hype javascript
   @documentLoaded:(hypeDocument)->
-    # a static method.  must be called in onSceneLoad of first scene
+    # must be called in onSceneLoad of first scene
     @_views[hypeDocument.documentName()].hypeDocument = hypeDocument
     @_views[hypeDocument.documentName()]._documentLoaded()
 

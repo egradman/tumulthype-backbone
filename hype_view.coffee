@@ -22,16 +22,21 @@ window.HypeView = class HypeView extends Backbone.View
     #  @sounds[scene_name] = new Sound("#{@basename}_Resources/#{scene_name}.mp3");
 
   render:()=>
-    @$el.html("""
+    new_el = $("""
       <div id='#{@basename}_hype_container' class='hype-container' style='position:relative;overflow:hidden;width:#{@options['width']}px;height:#{@options['height']}px;background-color:transparent;'>
         <script type='text/javascript' charset='utf-8' src='#{@basename}_Resources/#{@basename}_hype_generated_script.js?71143'></script>
       </div>
     """)
+    @$el.replaceWith(new_el)
+    @setElement(new_el)
     @
 
   showSceneNamed:(scene_name, data, @animationCompleteCallback)=>
     @hypeDocument.templateData = data
     @hypeDocument.showSceneNamed(scene_name)
+
+  @byDocumentName:(document_name)->
+    return @_views[document_name]
 
   _animationSceneLoad:()=>
     # apply the underscore templates in the alt tags

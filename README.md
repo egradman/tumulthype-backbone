@@ -51,3 +51,5 @@ To play a scene:
     myView.showSceneNamed(sceneName, templateDictionary, mySceneIsDoneCallback)
 
 There's a working example of this in action in the `test` directory.  If you want to change the hype document, regenerate it to `public/test_Resources`.  The test app was generated using Brunch; look in `lib/router.coffee` or `lib/router.js` for how the Hype document is initialized and run.
+
+In the hype document, pay particular attention to the `alt` tag of the "New Text" element.  There's an underscore template hiding there!  Also, look at the animationSceneLoad() function, which conditionally plays a timeline based on data stashed in the templateData object.

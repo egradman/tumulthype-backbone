@@ -149,11 +149,13 @@
       });
       return this.hypeView.load(function() {
         return _this.hypeView.showSceneNamed("monkeys", {
-          something: "awesome"
+          something: "awesome",
+          play_conditional: false
         }, function() {
-          console.log("played");
+          console.log("finished playing, playing again");
           return _this.hypeView.showSceneNamed("monkeys", {
-            something: "terrible"
+            something: "terrible",
+            play_conditional: true
           }, function() {
             return console.log("played");
           });
@@ -299,7 +301,10 @@
     };
 
     HypeView.prototype.render = function() {
-      this.$el.html("<div id='" + this.basename + "_hype_container' class='hype-container' style='position:relative;overflow:hidden;width:" + this.options['width'] + "px;height:" + this.options['height'] + "px;background-color:transparent;'>\n  <script type='text/javascript' charset='utf-8' src='" + this.basename + "_Resources/" + this.basename + "_hype_generated_script.js?71143'></script>\n</div>");
+      var new_el;
+      new_el = $("<div id='" + this.basename + "_hype_container' class='hype-container' style='position:relative;overflow:hidden;width:" + this.options['width'] + "px;height:" + this.options['height'] + "px;background-color:transparent;'>\n  <script type='text/javascript' charset='utf-8' src='" + this.basename + "_Resources/" + this.basename + "_hype_generated_script.js?71143'></script>\n</div>");
+      this.$el.replaceWith(new_el);
+      this.setElement(new_el);
       return this;
     };
 
@@ -307,6 +312,10 @@
       this.animationCompleteCallback = animationCompleteCallback;
       this.hypeDocument.templateData = data;
       return this.hypeDocument.showSceneNamed(scene_name);
+    };
+
+    HypeView.byDocumentName = function(document_name) {
+      return this._views[document_name];
     };
 
     HypeView.prototype._animationSceneLoad = function() {

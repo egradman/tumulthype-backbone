@@ -14,7 +14,7 @@ module.exports = class Router extends Backbone.Router
       height: 1336
     })
     @hypeView.load ()=>
-      @hypeView.showSceneNamed "monkeys", {something: "awesome"}, ()=>
-        console.log("played")
-        @hypeView.showSceneNamed "monkeys", {something: "terrible"}, ()=>
+      @hypeView.showSceneNamed "monkeys", {something: "awesome", play_conditional: false}, ()=>
+        console.log("finished playing, playing again")
+        @hypeView.showSceneNamed "monkeys", {something: "terrible", play_conditional: true}, ()=>
           console.log("played")

@@ -49,3 +49,5 @@ To load a hype document:
 To play a scene:
 
     myView.showSceneNamed(sceneName, templateDictionary, mySceneIsDoneCallback)
+
+There's a working example of this in action in the `test` directory.  If you want to change the hype document, regenerate it to `public/test_Resources`.  The test app was generated using Brunch; look in `lib/router.coffee` or `lib/router.js` for how the Hype document is initialized and run.

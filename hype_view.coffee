@@ -35,18 +35,38 @@ window.HypeView = class HypeView extends Backbone.View
     @hypeDocument.templateData = data
     @hypeDocument.showSceneNamed(scene_name)
 
+  _transitionToSceneNamed:(scene_name, timeline_name, data, @animationCompleteCallback)=>
+    @hypeDocument.templateData = data
+    @bind "animation:complete_for_transition", ()=>
+      @unbind "animation:complete_for_transition"
+      @showSceneNamed(scene_name, data, @animationCompleteCallback)
+    @hypeDocument.playTimelineNamed(timeline_name)
+
   @byDocumentName:(document_name)->
     return @_views[document_name]
+
+  _mouseClick:(element, event)=>
+    # trigger a click:element_id
+    console.log("click", element.id)
+    @trigger("click:#{element.id}")
 
   _animationSceneLoad:()=>
     # apply the underscore templates in the alt tags
     alts = @$el.find("[alt]")
     alts.each (i, el)=>
       $(el).html(_.template($(el).attr("alt"), @hypeDocument.templateData))
+
+    override_function_name = @hypeDocument.currentSceneName() + "_animationSceneLoad"
+    if this[override_function_name]?
+      this[override_function_name]()
+    
     #@sounds[@hypeDocument.currentSceneName()]?.play()
 
   _animationComplete:()=>
-    @animationCompleteCallback()
+    console.log("animation complete")
+    @trigger("animation:complete_for_transition")
+    if @animationCompleteCallback?
+      @animationCompleteCallback()
 
   # these are the static methods that can be called from your Hype javascript
   @documentLoaded:(hypeDocument)->
@@ -59,5 +79,11 @@ window.HypeView = class HypeView extends Backbone.View
 
   @animationComplete:(hypeDocument)->
     @_views[hypeDocument.documentName()]._animationComplete()
+
+  @mouseClick:(hypeDocument, element, event)->
+    @_views[hypeDocument.documentName()]._mouseClick(element, event)
+
+  @transitionToSceneNamed:(hypeDocument, scene_name, timeline_name, data, animationCompleteCallback)->
+    @_views[hypeDocument.documentName()]._transitionToSceneNamed(scene_name, timeline_name, data, animationCompleteCallback)
 
 module.exports = window.HypeView

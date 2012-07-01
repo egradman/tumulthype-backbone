@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>currentScene</key>
-	<string>81</string>
+	<string>539</string>
 	<key>displayedAttributes</key>
 	<array>
 		<string>kPropertiesMenuItemIdentifierOpacity</string>
@@ -19,13 +19,13 @@
 	<key>guidesAreLocked</key>
 	<false/>
 	<key>lastCheckDate</key>
-	<date>2012-06-19T16:50:42Z</date>
+	<date>2012-07-01T20:51:02Z</date>
 	<key>layout</key>
 	<dict>
 		<key>keyframeTimelineHeight</key>
-		<real>135</real>
+		<real>149</real>
 		<key>mainWindowFrame</key>
-		<string>0 51 1167 827 0 0 1440 878 </string>
+		<string>0 94 1329 934 0 0 1680 1028 </string>
 		<key>openTabs</key>
 		<array>
 			<dict>
@@ -46,20 +46,32 @@
 				<key>oid</key>
 				<string>112</string>
 			</dict>
+			<dict>
+				<key>className</key>
+				<string>HypeJavascript</string>
+				<key>oid</key>
+				<string>542</string>
+			</dict>
+			<dict>
+				<key>className</key>
+				<string>HypeJavascript</string>
+				<key>oid</key>
+				<string>543</string>
+			</dict>
 		</array>
 		<key>selectedTabIndex</key>
-		<integer>0</integer>
+		<integer>5</integer>
 		<key>showSceneTabView</key>
 		<true/>
 		<key>splitHeight</key>
-		<real>499</real>
+		<real>612</real>
 		<key>splitViewIsVertical</key>
 		<false/>
 		<key>splitWidth</key>
 		<real>640</real>
 	</dict>
 	<key>oidCounter</key>
-	<integer>538</integer>
+	<integer>543</integer>
 	<key>resources</key>
 	<array>
 		<dict>
@@ -177,13 +189,13 @@
 					<key>538</key>
 					<real>2.9666666984558105</real>
 					<key>kTimelineDefaultIdentifier</key>
-					<real>0.0</real>
+					<real>3.1333334445953369</real>
 				</dict>
 				<key>timescale</key>
 				<integer>50</integer>
 			</dict>
 			<key>canvasSize</key>
-			<string>{2334, 1386}</string>
+			<string>{5316, 2296}</string>
 			<key>context</key>
 			<dict>
 				<key>currentTimelineIdentifier</key>
@@ -317,9 +329,9 @@
 						</dict>
 						<dict>
 							<key>identifier</key>
-							<string>TextColor</string>
+							<string>TagName</string>
 							<key>objectValue</key>
-							<string>#000000</string>
+							<string>div</string>
 						</dict>
 						<dict>
 							<key>identifier</key>
@@ -413,15 +425,15 @@
 						</dict>
 						<dict>
 							<key>identifier</key>
-							<string>Width</string>
-							<key>objectValue</key>
-							<string>492px</string>
-						</dict>
-						<dict>
-							<key>identifier</key>
 							<string>ZIndex</string>
 							<key>objectValue</key>
 							<string>2</string>
+						</dict>
+						<dict>
+							<key>identifier</key>
+							<string>Width</string>
+							<key>objectValue</key>
+							<string>492px</string>
 						</dict>
 						<dict>
 							<key>identifier</key>
@@ -443,9 +455,9 @@
 						</dict>
 						<dict>
 							<key>identifier</key>
-							<string>TagName</string>
+							<string>TextColor</string>
 							<key>objectValue</key>
-							<string>div</string>
+							<string>#000000</string>
 						</dict>
 					</array>
 				</dict>
@@ -737,13 +749,472 @@
 			<key>oid</key>
 			<string>81</string>
 			<key>scrollViewOffset</key>
-			<string>{0, 79}</string>
+			<string>{0, 1}</string>
 			<key>selectedObjects</key>
 			<array>
 				<string>536</string>
 			</array>
 			<key>splitHeight</key>
-			<real>499</real>
+			<real>549</real>
+		</dict>
+		<dict>
+			<key>animationController</key>
+			<dict>
+				<key>expandedItems</key>
+				<array/>
+				<key>timeCursors</key>
+				<dict>
+					<key>541</key>
+					<real>1</real>
+					<key>kTimelineDefaultIdentifier</key>
+					<real>0.96666663885116577</real>
+				</dict>
+				<key>timescale</key>
+				<integer>60</integer>
+			</dict>
+			<key>canvasSize</key>
+			<string>{5316, 2448}</string>
+			<key>context</key>
+			<dict>
+				<key>currentTimelineIdentifier</key>
+				<string>541</string>
+				<key>elements</key>
+				<dict>
+					<key>540</key>
+					<array>
+						<dict>
+							<key>identifier</key>
+							<string>TagName</string>
+							<key>objectValue</key>
+							<string>div</string>
+						</dict>
+						<dict>
+							<key>identifier</key>
+							<string>ExplicitDimensions</string>
+							<key>objectValue</key>
+							<string>YES</string>
+						</dict>
+						<dict>
+							<key>identifier</key>
+							<string>ConstrainProportions</string>
+							<key>objectValue</key>
+							<string>YES</string>
+						</dict>
+						<dict>
+							<key>identifier</key>
+							<string>Display</string>
+							<key>objectValue</key>
+							<string>inline</string>
+						</dict>
+						<dict>
+							<key>identifier</key>
+							<string>Cursor</string>
+							<key>objectValue</key>
+							<string>pointer</string>
+						</dict>
+						<dict>
+							<key>identifier</key>
+							<string>ClassType</string>
+							<key>objectValue</key>
+							<string>Image</string>
+						</dict>
+						<dict>
+							<key>identifier</key>
+							<string>Top</string>
+							<key>objectValue</key>
+							<string>442px</string>
+						</dict>
+						<dict>
+							<key>identifier</key>
+							<string>BackgroundImage</string>
+							<key>objectValue</key>
+							<string>monkey.png</string>
+						</dict>
+						<dict>
+							<key>identifier</key>
+							<string>Position</string>
+							<key>objectValue</key>
+							<string>absolute</string>
+						</dict>
+						<dict>
+							<key>identifier</key>
+							<string>Height</string>
+							<key>objectValue</key>
+							<string>389px</string>
+						</dict>
+						<dict>
+							<key>identifier</key>
+							<string>Left</string>
+							<key>objectValue</key>
+							<string>-451px</string>
+						</dict>
+						<dict>
+							<key>identifier</key>
+							<string>SizeRatio</string>
+							<key>objectValue</key>
+							<string>1.13636</string>
+						</dict>
+						<dict>
+							<key>identifier</key>
+							<string>ActionOnMouseClick</string>
+							<key>objectValue</key>
+							<dict>
+								<key>javascriptOid</key>
+								<string>543</string>
+								<key>type</key>
+								<integer>4</integer>
+							</dict>
+						</dict>
+						<dict>
+							<key>identifier</key>
+							<string>BackgroundOrigin</string>
+							<key>objectValue</key>
+							<string>content-box</string>
+						</dict>
+						<dict>
+							<key>identifier</key>
+							<string>Width</string>
+							<key>objectValue</key>
+							<string>442px</string>
+						</dict>
+						<dict>
+							<key>identifier</key>
+							<string>ZIndex</string>
+							<key>objectValue</key>
+							<string>1</string>
+						</dict>
+						<dict>
+							<key>identifier</key>
+							<string>BackgroundSize</string>
+							<key>objectValue</key>
+							<string>100% 100%</string>
+						</dict>
+						<dict>
+							<key>identifier</key>
+							<string>Overflow</string>
+							<key>objectValue</key>
+							<string>visible</string>
+						</dict>
+						<dict>
+							<key>identifier</key>
+							<string>DisplayName</string>
+							<key>objectValue</key>
+							<string>monkey</string>
+						</dict>
+						<dict>
+							<key>identifier</key>
+							<string>OriginalHeight</string>
+							<key>objectValue</key>
+							<string>22px</string>
+						</dict>
+						<dict>
+							<key>identifier</key>
+							<string>OriginalWidth</string>
+							<key>objectValue</key>
+							<string>25px</string>
+						</dict>
+					</array>
+				</dict>
+				<key>onSceneAnimationCompleteAction</key>
+				<dict>
+					<key>javascriptOid</key>
+					<string>45</string>
+					<key>type</key>
+					<integer>4</integer>
+				</dict>
+				<key>onSceneLoadAction</key>
+				<dict>
+					<key>javascriptOid</key>
+					<string>111</string>
+					<key>type</key>
+					<integer>4</integer>
+				</dict>
+				<key>onSceneUnloadAction</key>
+				<dict>
+					<key>type</key>
+					<integer>0</integer>
+				</dict>
+				<key>properties</key>
+				<dict>
+					<key>backgroundColor</key>
+					<string>#FFFFFF</string>
+					<key>perspective</key>
+					<real>600</real>
+				</dict>
+				<key>timelines</key>
+				<array>
+					<dict>
+						<key>animations</key>
+						<array>
+							<dict>
+								<key>duration</key>
+								<real>0.96666663885116577</real>
+								<key>endValue</key>
+								<dict>
+									<key>identifier</key>
+									<string>Left</string>
+									<key>objectValue</key>
+									<string>857px</string>
+								</dict>
+								<key>identifier</key>
+								<string>Left</string>
+								<key>isRelative</key>
+								<true/>
+								<key>oid</key>
+								<string>540</string>
+								<key>startTime</key>
+								<real>0.0</real>
+								<key>startValue</key>
+								<dict>
+									<key>identifier</key>
+									<string>Left</string>
+									<key>objectValue</key>
+									<string>-451px</string>
+								</dict>
+								<key>timingFunction</key>
+								<string>easeinout</string>
+								<key>type</key>
+								<integer>0</integer>
+								<key>uuid</key>
+								<string>201F46E9-BB11-457B-A024-E6520EF173F9-17051-00009F724E4AC8EF</string>
+							</dict>
+							<dict>
+								<key>duration</key>
+								<real>0.96666663885116577</real>
+								<key>endValue</key>
+								<dict>
+									<key>identifier</key>
+									<string>Top</string>
+									<key>objectValue</key>
+									<string>426px</string>
+								</dict>
+								<key>identifier</key>
+								<string>Top</string>
+								<key>isRelative</key>
+								<true/>
+								<key>oid</key>
+								<string>540</string>
+								<key>startTime</key>
+								<real>0.0</real>
+								<key>startValue</key>
+								<dict>
+									<key>identifier</key>
+									<string>Top</string>
+									<key>objectValue</key>
+									<string>442px</string>
+								</dict>
+								<key>timingFunction</key>
+								<string>easeinout</string>
+								<key>type</key>
+								<integer>0</integer>
+								<key>uuid</key>
+								<string>53A0204F-CA0E-4DF2-B372-80DD3B2D1DAD-17051-00009F725B3E9CC8</string>
+							</dict>
+							<dict>
+								<key>duration</key>
+								<real>0.0</real>
+								<key>identifier</key>
+								<string>Left</string>
+								<key>isRelative</key>
+								<false/>
+								<key>oid</key>
+								<string>540</string>
+								<key>startTime</key>
+								<real>0.96666663885116577</real>
+								<key>startValue</key>
+								<dict>
+									<key>identifier</key>
+									<string>Left</string>
+									<key>objectValue</key>
+									<string>857px</string>
+								</dict>
+								<key>timingFunction</key>
+								<string>easeinout</string>
+								<key>type</key>
+								<integer>0</integer>
+								<key>uuid</key>
+								<string>DD9E6923-907A-40FE-8A30-DD00A12209C6-17051-00009F741C4FE841</string>
+							</dict>
+							<dict>
+								<key>duration</key>
+								<real>0.0</real>
+								<key>identifier</key>
+								<string>Top</string>
+								<key>isRelative</key>
+								<false/>
+								<key>oid</key>
+								<string>540</string>
+								<key>startTime</key>
+								<real>0.96666663885116577</real>
+								<key>startValue</key>
+								<dict>
+									<key>identifier</key>
+									<string>Top</string>
+									<key>objectValue</key>
+									<string>426px</string>
+								</dict>
+								<key>timingFunction</key>
+								<string>easeinout</string>
+								<key>type</key>
+								<integer>0</integer>
+								<key>uuid</key>
+								<string>8C1C5C6D-B234-4976-87DD-704667166A62-17051-00009F741C5C5954</string>
+							</dict>
+						</array>
+						<key>framesPerSecond</key>
+						<integer>30</integer>
+						<key>hidden</key>
+						<false/>
+						<key>identifier</key>
+						<string>kTimelineDefaultIdentifier</string>
+						<key>name</key>
+						<string>Main Timeline</string>
+						<key>userDefinedDuration</key>
+						<real>0.0</real>
+					</dict>
+					<dict>
+						<key>animations</key>
+						<array>
+							<dict>
+								<key>duration</key>
+								<real>1</real>
+								<key>endValue</key>
+								<dict>
+									<key>identifier</key>
+									<string>Left</string>
+									<key>objectValue</key>
+									<string>2089px</string>
+								</dict>
+								<key>identifier</key>
+								<string>Left</string>
+								<key>isRelative</key>
+								<true/>
+								<key>oid</key>
+								<string>540</string>
+								<key>startTime</key>
+								<real>0.0</real>
+								<key>startValue</key>
+								<dict>
+									<key>identifier</key>
+									<string>Left</string>
+									<key>objectValue</key>
+									<string>857px</string>
+								</dict>
+								<key>timingFunction</key>
+								<string>easeinout</string>
+								<key>type</key>
+								<integer>0</integer>
+								<key>uuid</key>
+								<string>032A47ED-A310-466E-BA9F-7F22E4BED7D3-17051-00009F78ED287F57</string>
+							</dict>
+							<dict>
+								<key>duration</key>
+								<real>1</real>
+								<key>endValue</key>
+								<dict>
+									<key>identifier</key>
+									<string>Top</string>
+									<key>objectValue</key>
+									<string>430px</string>
+								</dict>
+								<key>identifier</key>
+								<string>Top</string>
+								<key>isRelative</key>
+								<true/>
+								<key>oid</key>
+								<string>540</string>
+								<key>startTime</key>
+								<real>0.0</real>
+								<key>startValue</key>
+								<dict>
+									<key>identifier</key>
+									<string>Top</string>
+									<key>objectValue</key>
+									<string>426px</string>
+								</dict>
+								<key>timingFunction</key>
+								<string>easeinout</string>
+								<key>type</key>
+								<integer>0</integer>
+								<key>uuid</key>
+								<string>23B69C28-1E9C-46F6-A483-08F55340E510-17051-00009F78ED38633A</string>
+							</dict>
+							<dict>
+								<key>duration</key>
+								<real>0.0</real>
+								<key>identifier</key>
+								<string>Left</string>
+								<key>isRelative</key>
+								<false/>
+								<key>oid</key>
+								<string>540</string>
+								<key>startTime</key>
+								<real>1</real>
+								<key>startValue</key>
+								<dict>
+									<key>identifier</key>
+									<string>Left</string>
+									<key>objectValue</key>
+									<string>2089px</string>
+								</dict>
+								<key>timingFunction</key>
+								<string>easeinout</string>
+								<key>type</key>
+								<integer>0</integer>
+								<key>uuid</key>
+								<string>D1F33821-06C9-4BB7-9957-6A3C85D3769C-17051-00009F78ED2DFCE1</string>
+							</dict>
+							<dict>
+								<key>duration</key>
+								<real>0.0</real>
+								<key>identifier</key>
+								<string>Top</string>
+								<key>isRelative</key>
+								<false/>
+								<key>oid</key>
+								<string>540</string>
+								<key>startTime</key>
+								<real>1</real>
+								<key>startValue</key>
+								<dict>
+									<key>identifier</key>
+									<string>Top</string>
+									<key>objectValue</key>
+									<string>430px</string>
+								</dict>
+								<key>timingFunction</key>
+								<string>easeinout</string>
+								<key>type</key>
+								<integer>0</integer>
+								<key>uuid</key>
+								<string>E1E2CD67-AE29-4D6A-892F-98EBEFAF9A48-17051-00009F78ED3C2D29</string>
+							</dict>
+						</array>
+						<key>framesPerSecond</key>
+						<integer>30</integer>
+						<key>hidden</key>
+						<false/>
+						<key>identifier</key>
+						<string>541</string>
+						<key>name</key>
+						<string>out</string>
+						<key>userDefinedDuration</key>
+						<real>0.0</real>
+					</dict>
+				</array>
+			</dict>
+			<key>name</key>
+			<string>testout</string>
+			<key>oid</key>
+			<string>539</string>
+			<key>scrollViewOffset</key>
+			<string>{0, 0}</string>
+			<key>selectedObjects</key>
+			<array>
+				<string>540</string>
+			</array>
+			<key>splitHeight</key>
+			<real>612</real>
 		</dict>
 	</array>
 	<key>scripts</key>
@@ -753,11 +1224,7 @@
 			<string>45</string>
 			<key>source</key>
 			<string>function animationComplete(hypeDocument, element, event) {
-	try {
-		HypeView.animationComplete(hypeDocument);
-	} catch(e) {
-		console.log("error in animationComplete", e);
-	}
+	HypeView.animationComplete(hypeDocument);
 }
 </string>
 		</dict>
@@ -766,15 +1233,7 @@
 			<string>111</string>
 			<key>source</key>
 			<string>function animationSceneLoad(hypeDocument, element, event) {
-	try {
 		HypeView.animationSceneLoad(hypeDocument);
-		if (hypeDocument.templateData["play_conditional"]) {
-			console.log("playing conditional");
-			hypeDocument.playTimelineNamed("conditional");
-		}
-	} catch(e) {
-		console.log("error in animationSceneLoad", e);
-	}
 }
 </string>
 		</dict>
@@ -783,11 +1242,25 @@
 			<string>112</string>
 			<key>source</key>
 			<string>function documentLoaded(hypeDocument, element, event) {
-	try {
-		HypeView.documentLoaded(hypeDocument);
-	} catch(e) {
-		console.log("error in documentLoaded", e);
-	}
+	HypeView.documentLoaded(hypeDocument);
+}
+</string>
+		</dict>
+		<dict>
+			<key>oid</key>
+			<string>542</string>
+			<key>source</key>
+			<string>function mouseClick(hypeDocument, element, event) {
+	HypeView.mouseClick(hypeDocument, element, event);
+}
+</string>
+		</dict>
+		<dict>
+			<key>oid</key>
+			<string>543</string>
+			<key>source</key>
+			<string>function untitledFunction(hypeDocument, element, event) {
+	HypeView.transitionToSceneNamed(hypeDocument, "monkeys", "out", {something: "working!"});
 }
 </string>
 		</dict>
@@ -799,6 +1272,6 @@
 	<key>unsupportedBrowserIdentifiers</key>
 	<array/>
 	<key>zoomFactor</key>
-	<real>0.5</real>
+	<real>0.25</real>
 </dict>
 </plist>

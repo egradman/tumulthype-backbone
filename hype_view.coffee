@@ -54,7 +54,9 @@ window.HypeView = class HypeView extends Backbone.View
     # apply the underscore templates in the alt tags
     alts = @$el.find("[alt]")
     alts.each (i, el)=>
-      $(el).html(_.template($(el).attr("alt"), @hypeDocument.templateData))
+      d = _.clone(@hypeDocument.templateData)
+      d['el'] = el
+      $(el).html(_.template($(el).attr("alt"), d))
 
     override_function_name = @hypeDocument.currentSceneName() + "_animationSceneLoad"
     if this[override_function_name]?

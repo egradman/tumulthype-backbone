@@ -19,11 +19,11 @@
 	<key>guidesAreLocked</key>
 	<false/>
 	<key>lastCheckDate</key>
-	<date>2012-07-01T20:51:02Z</date>
+	<date>2012-07-01T23:10:03Z</date>
 	<key>layout</key>
 	<dict>
 		<key>keyframeTimelineHeight</key>
-		<real>149</real>
+		<real>93.5</real>
 		<key>mainWindowFrame</key>
 		<string>0 94 1329 934 0 0 1680 1028 </string>
 		<key>openTabs</key>
@@ -60,18 +60,18 @@
 			</dict>
 		</array>
 		<key>selectedTabIndex</key>
-		<integer>5</integer>
+		<integer>0</integer>
 		<key>showSceneTabView</key>
 		<true/>
 		<key>splitHeight</key>
-		<real>612</real>
+		<real>675</real>
 		<key>splitViewIsVertical</key>
 		<false/>
 		<key>splitWidth</key>
 		<real>640</real>
 	</dict>
 	<key>oidCounter</key>
-	<integer>543</integer>
+	<integer>545</integer>
 	<key>resources</key>
 	<array>
 		<dict>
@@ -127,7 +127,7 @@
 				<integer>60</integer>
 			</dict>
 			<key>canvasSize</key>
-			<string>{2334, 1386}</string>
+			<string>{5316, 2700}</string>
 			<key>context</key>
 			<dict>
 				<key>currentTimelineIdentifier</key>
@@ -171,11 +171,11 @@
 			<key>oid</key>
 			<string>110</string>
 			<key>scrollViewOffset</key>
-			<string>{15, 10}</string>
+			<string>{0, 0}</string>
 			<key>selectedObjects</key>
 			<array/>
 			<key>splitHeight</key>
-			<real>627</real>
+			<real>675</real>
 		</dict>
 		<dict>
 			<key>animationController</key>
@@ -195,7 +195,7 @@
 				<integer>50</integer>
 			</dict>
 			<key>canvasSize</key>
-			<string>{5316, 2296}</string>
+			<string>{5316, 2700}</string>
 			<key>context</key>
 			<dict>
 				<key>currentTimelineIdentifier</key>
@@ -749,13 +749,13 @@
 			<key>oid</key>
 			<string>81</string>
 			<key>scrollViewOffset</key>
-			<string>{0, 1}</string>
+			<string>{0, 0}</string>
 			<key>selectedObjects</key>
 			<array>
 				<string>536</string>
 			</array>
 			<key>splitHeight</key>
-			<real>549</real>
+			<real>675</real>
 		</dict>
 		<dict>
 			<key>animationController</key>
@@ -773,11 +773,11 @@
 				<integer>60</integer>
 			</dict>
 			<key>canvasSize</key>
-			<string>{5316, 2448}</string>
+			<string>{5316, 2700}</string>
 			<key>context</key>
 			<dict>
 				<key>currentTimelineIdentifier</key>
-				<string>541</string>
+				<string>kTimelineDefaultIdentifier</string>
 				<key>elements</key>
 				<dict>
 					<key>540</key>
@@ -912,6 +912,146 @@
 							<string>OriginalWidth</string>
 							<key>objectValue</key>
 							<string>25px</string>
+						</dict>
+					</array>
+					<key>545</key>
+					<array>
+						<dict>
+							<key>identifier</key>
+							<string>OriginalWidth</string>
+							<key>objectValue</key>
+							<string>25px</string>
+						</dict>
+						<dict>
+							<key>identifier</key>
+							<string>AltText</string>
+							<key>objectValue</key>
+							<string>&lt;% $(el).css("border", "solid 1px red") %&gt;</string>
+						</dict>
+						<dict>
+							<key>identifier</key>
+							<string>ExplicitDimensions</string>
+							<key>objectValue</key>
+							<string>YES</string>
+						</dict>
+						<dict>
+							<key>identifier</key>
+							<string>ConstrainProportions</string>
+							<key>objectValue</key>
+							<string>YES</string>
+						</dict>
+						<dict>
+							<key>identifier</key>
+							<string>Display</string>
+							<key>objectValue</key>
+							<string>inline</string>
+						</dict>
+						<dict>
+							<key>identifier</key>
+							<string>Cursor</string>
+							<key>objectValue</key>
+							<string>pointer</string>
+						</dict>
+						<dict>
+							<key>identifier</key>
+							<string>ClassType</string>
+							<key>objectValue</key>
+							<string>Image</string>
+						</dict>
+						<dict>
+							<key>identifier</key>
+							<string>Top</string>
+							<key>objectValue</key>
+							<string>37px</string>
+						</dict>
+						<dict>
+							<key>identifier</key>
+							<string>BackgroundImage</string>
+							<key>objectValue</key>
+							<string>monkey.png</string>
+						</dict>
+						<dict>
+							<key>identifier</key>
+							<string>Position</string>
+							<key>objectValue</key>
+							<string>absolute</string>
+						</dict>
+						<dict>
+							<key>identifier</key>
+							<string>Height</string>
+							<key>objectValue</key>
+							<string>389px</string>
+						</dict>
+						<dict>
+							<key>identifier</key>
+							<string>Left</string>
+							<key>objectValue</key>
+							<string>187px</string>
+						</dict>
+						<dict>
+							<key>identifier</key>
+							<string>SizeRatio</string>
+							<key>objectValue</key>
+							<string>1.13636</string>
+						</dict>
+						<dict>
+							<key>identifier</key>
+							<string>ActionOnMouseClick</string>
+							<key>objectValue</key>
+							<dict>
+								<key>javascriptOid</key>
+								<string>543</string>
+								<key>type</key>
+								<integer>4</integer>
+							</dict>
+						</dict>
+						<dict>
+							<key>identifier</key>
+							<string>BackgroundOrigin</string>
+							<key>objectValue</key>
+							<string>content-box</string>
+						</dict>
+						<dict>
+							<key>identifier</key>
+							<string>Width</string>
+							<key>objectValue</key>
+							<string>442px</string>
+						</dict>
+						<dict>
+							<key>identifier</key>
+							<string>ZIndex</string>
+							<key>objectValue</key>
+							<string>2</string>
+						</dict>
+						<dict>
+							<key>identifier</key>
+							<string>BackgroundSize</string>
+							<key>objectValue</key>
+							<string>100% 100%</string>
+						</dict>
+						<dict>
+							<key>identifier</key>
+							<string>Overflow</string>
+							<key>objectValue</key>
+							<string>visible</string>
+						</dict>
+						<dict>
+							<key>identifier</key>
+							<string>DisplayName</string>
+							<key>objectValue</key>
+							<string>monkey</string>
+						</dict>
+						<dict>
+							<key>identifier</key>
+							<string>OriginalHeight</string>
+							<key>objectValue</key>
+							<string>22px</string>
+						</dict>
+						<dict>
+							<key>identifier</key>
+							<string>TagName</string>
+							<key>objectValue</key>
+							<string>div</string>
 						</dict>
 					</array>
 				</dict>
@@ -1211,10 +1351,10 @@
 			<string>{0, 0}</string>
 			<key>selectedObjects</key>
 			<array>
-				<string>540</string>
+				<string>545</string>
 			</array>
 			<key>splitHeight</key>
-			<real>612</real>
+			<real>675</real>
 		</dict>
 	</array>
 	<key>scripts</key>

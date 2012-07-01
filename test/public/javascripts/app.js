@@ -110,13 +110,29 @@ window.require.define({"initialize": function(exports, require, module) {
 
 window.require.define({"lib/router": function(exports, require, module) {
   (function() {
-    var HypeView, Router, application,
+    var HypeView, MyHypeView, Router, application,
       __hasProp = Object.prototype.hasOwnProperty,
       __extends = function(child, parent) { for (var key in parent) { if (__hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor; child.__super__ = parent.prototype; return child; };
 
     application = require('application');
 
     HypeView = require('views/hype_view');
+
+    MyHypeView = (function(_super) {
+
+      __extends(MyHypeView, _super);
+
+      function MyHypeView() {
+        MyHypeView.__super__.constructor.apply(this, arguments);
+      }
+
+      MyHypeView.prototype.initialize = function() {
+        return MyHypeView.__super__.initialize.call(this);
+      };
+
+      return MyHypeView;
+
+    })(HypeView);
 
     module.exports = Router = (function(_super) {
 
@@ -134,14 +150,18 @@ window.require.define({"lib/router": function(exports, require, module) {
         var d,
           _this = this;
         d = $("<div></div>").appendTo($("body"));
-        this.hypeView = new HypeView({
+        this.hypeView = new MyHypeView({
           el: d,
           basename: "test",
           width: 2048,
           height: 1336
         });
         return this.hypeView.load(function() {
-          return _this.hypeView.showSceneNamed("testout");
+          var x;
+          x = $("<div>this is a test</div>");
+          return _this.hypeView.showSceneNamed("testout", {
+            widget: x
+          });
         });
       };
 
@@ -318,7 +338,10 @@ window.require.define({"views/hype_view": function(exports, require, module) {
           _this = this;
         alts = this.$el.find("[alt]");
         alts.each(function(i, el) {
-          return $(el).html(_.template($(el).attr("alt"), _this.hypeDocument.templateData));
+          var d;
+          d = _.clone(_this.hypeDocument.templateData);
+          d['el'] = el;
+          return $(el).html(_.template($(el).attr("alt"), d));
         });
         override_function_name = this.hypeDocument.currentSceneName() + "_animationSceneLoad";
         if (this[override_function_name] != null) {
